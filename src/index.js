@@ -6,10 +6,10 @@ import Footer from './Footer'
 import learn from './learn';
 import myVocabs from './myvocabs';
 import profile from './profile'
-import {Router,Route} from 'react-router'
+import { Router, Route,Link,browserHistory } from 'react-router'
 
 ReactDOM.render((
-	<Router>
+	<Router history={browserHistory}>
 		<Route path="/" component={learn} />
 		<Route path="/myvocabs" component={myVocabs} />
 		<Route path="/profile" component={profile} />
